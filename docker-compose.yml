@@ -1,0 +1,8 @@
+beehive:
+ build: beehive-microservice
+ ports:
+  - "8080"
+ links:
+  - mongodb
+mongodb:
+ image: mongo
