@@ -4,5 +4,17 @@ beehive:
   - "8080"
  links:
   - mongodb
+goods:
+ build: goods-microservice
+ ports:
+  - "8080"
+ links:
+  - mongodb
+treatments:
+ build: treatments-microservice
+ ports:
+  - "8080"
+ links:
+  - mongodb
 mongodb:
  image: mongo
